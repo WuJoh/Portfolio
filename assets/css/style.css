@@ -110,7 +110,6 @@ header nav ul li a {
     display: inline;
 }
 
-
 .page-wrapper {
     max-width: 88%;
     margin-left: auto;
@@ -128,15 +127,12 @@ header nav ul li a {
 }
   
 .page-section > h2 {
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 15px;
-    border-right: 4px solid var(--dark-blue);
-    font-size: 2vw;
-    line-height: 1.1;
-    writing-mode: vertical-rl;
+    text-align: center;
+    font-size: 75px;
     text-decoration: underline;
-    text-underline-position: right;
+    padding-bottom: 30px;
+    color: #1a5276;
+    text-shadow: 0 0 10px rgba(0, 0, 0.2)
 }
 
 .page-name h2 {
@@ -148,12 +144,33 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0.5)
 }
   
+.page-about h2 {
+    text-align: center;
+    font-size: 75px;
+    text-decoration: underline;
+    padding-bottom: 30px;
+    color: #1a5276;
+    text-shadow: 0 0 10px rgba(0, 0, 0.2)
+}
+
+.page-about div {
+    flex: 0 0 77%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+  }
+
 .page-section > div {
     flex: 0 0 77%;
 }
   
-.page-section p {
-    margin-bottom: 40px;
+.page-about p {
+    text-align: center;
 }
   
 .grid-container {
@@ -248,3 +265,130 @@ header nav ul li a {
     font-size: 45px;
     font-family: monospace;
 }
+
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+
+    .hero-cta, .hero-form {
+      width: 100%;
+    }
+    
+    .hero-cta {
+      text-align: center;
+    }
+
+    .section-title {
+      width: 80%;
+    }
+    
+    .trainer {
+      flex: 0 70%;
+    }
+    
+    .contact-info iframe{
+      flex: 1 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .hero-form button {
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .trainer {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+    
+    .contact-form {
+      order: 3;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .service-grid-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .service-grid-item.basic {
+      grid-column: 1;
+    }
+  
+    .service-grid-item.both {
+      grid-column: 1 / -1;
+    }
+  
+    .service-grid-item.cancel {
+      transform: none;
+      writing-mode: unset;
+      grid-column: 1 / -1;
+      grid-row: -1;
+    }
+  }
