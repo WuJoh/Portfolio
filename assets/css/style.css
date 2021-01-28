@@ -260,6 +260,10 @@ header nav ul li a {
     background-image: url("../images/horiseon.jpg");
 }
 
+.online-barkeep {
+    background-image: url("../images/cc630b84459d7a9fc84eca5e15d561a4.jpg");
+}
+
 .about::first-letter {
     font-weight: 900;
     font-size: 45px;
