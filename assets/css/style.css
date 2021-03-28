@@ -127,7 +127,7 @@ header nav ul li a {
 }
   
 .page-section > h2 {
-    text-align: center;
+    text-align: justify;
     font-size: 75px;
     text-decoration: underline;
     padding-bottom: 30px;
@@ -262,6 +262,10 @@ header nav ul li a {
 
 .online-barkeep {
     background-image: url("../images/cc630b84459d7a9fc84eca5e15d561a4.jpg");
+}
+
+.dangles {
+    background-image: url("../images/4a4c5c50d199e557ca1b7fe25efb67d7.png");
 }
 
 .about::first-letter {
